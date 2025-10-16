@@ -1,0 +1,348 @@
+/*.achievement-section:hover .swiperBtn-section {*/
+/*  display: block;*/
+/*}*/
+
+.swiperBtn-section {
+  display: none;
+}
+
+.new-contact-us-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  /* display: none; */
+}
+
+/* Overlay */
+.cmodal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal */
+.cmodal-box {
+  background: #f9f6f2;
+  padding: 40px 40px;
+
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Close button */
+.cmodal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cmodal-box h2 {
+  margin-top: 0;
+}
+
+.cmodal-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.cmodal-left,
+.cmodal-right {
+  flex: 1;
+  /* min-width: 250px; */
+}
+.cmodal-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cmodal-map {
+  margin-top: 15px;
+}
+
+.cmodal-right a {
+  color: #333;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.cmodal-social a {
+  margin-right: 10px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #333;
+}
+.cmodal-social a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Open button */
+.cmodal-openbtn {
+  margin: 50px;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Modal overlay */
+.formmodal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal box */
+.formmodal-box {
+  background: #f9f6f2;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Close button */
+.formmodal-close {
+  position: absolute;
+  /*top: 15px;*/
+  /*right: 20px;*/
+      top: 5px;
+    right: 11px;
+
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Left (form) */
+.formmodal-left {
+  flex: 1;
+  padding: 30px;
+}
+
+.formmodal-left h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formmodal-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formmodal-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.formmodal-form span {
+  color: red;
+}
+
+.formmodal-form input,
+.formmodal-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Make single full width field */
+.formmodal-full {
+  grid-column: span 2;
+}
+
+/* Submit button */
+.formmodal-submit {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.formmodal-submit button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.formmodal-submit button:hover {
+  background: #333;
+}
+
+/* Right (image) */
+.formmodal-right {
+  flex: 1;
+  background: url("https://picsum.photos/500/700") center/cover no-repeat;
+}
+
+
+
+
+/*.new-subscribe-form {*/
+/*    display: flex;*/
+    max-width: 350px; /* adjust width if needed */
+/*}*/
+
+/*.new-subscribe-form input[type="email"] {*/
+/*    flex: 1;*/
+/*    padding: 12px 15px;*/
+/*    border: none;*/
+    border-radius: 5px 0 0 5px; /* round left corners */
+/*    outline: none;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.new-subscribe-form button {*/
+    background-color: #f15a29; /* orange button */
+/*    color: #fff;*/
+/*    border: none;*/
+/*    padding: 0 10px;*/
+/*    font-size: 30px;*/
+    border-radius: 0 5px 5px 0; /* round right corners */
+/*    cursor: pointer;*/
+/*    transition: background 0.3s ease;*/
+/*}*/
+
+/*.new-subscribe-form button:hover {*/
+    background-color: #d94a1d; /* darker orange on hover */
+/*}*/
+
+
+
+
+.new-subscribe-form {
+    max-width: 350px; 
+}
+
+.new-subscribe-form .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    overflow: hidden; 
+    background: #fff; 
+}
+
+.new-subscribe-form input[type="email"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500; /* bold text */
+}
+
+.new-subscribe-form input::placeholder {
+    font-weight: 400; /* placeholder slightly lighter */
+    color: #999;
+}
+
+.new-subscribe-form button {
+    background-color: #f15a29; /* orange button */
+    color: #fff;
+    border: none;
+    padding: 0 10px 3px 9px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3px;
+}
+
+.new-subscribe-form button:hover {
+    background-color: #d94a1d; /* darker orange on hover */
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formmodal-box {
+    flex-direction: column;
+  }
+  .formmodal-right {
+    height: 200px;
+  }
+  .formmodal-form {
+    grid-template-columns: 1fr;
+  }
+  .formmodal-full {
+    grid-column: span 1;
+  }
+}
+
+/* Open button */
+.formmodal-openbtn {
+  margin: 40px;
+  padding: 12px 25px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .achievement-section .swiperBtn-section {
+    display: block;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+    .margin-buttom-when-small-screen-for-new-newsletter {
+        margin-bottom: 35px;
+    }
+    .display-none-when-small-screen-for-new-newsletter{
+        display:none;
+    }
+}
