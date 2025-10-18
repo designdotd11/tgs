@@ -279,8 +279,8 @@ strong {
 }
 
 .side-space {
-  padding-right: 0px;
-  padding-left: 0px;
+    padding-right: 80px;
+    padding-left: 80px;
 }
 
 .side-space-right {
@@ -882,25 +882,25 @@ a.accordion-button1 {
   align-items: center;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   z-index: 9;
 }
 .video-content-parent {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 273px;
-  /*width: 100%;*/
-      margin-left: 135px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+   top: 18%;
+    width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .video-content-parent {
-    margin-left: 51px;
+  padding-left: 84px;
+  padding-right: 84px;
     }
 }
-
+ */
 .announcement-text {
   background: rgb(1 110 135 / 80%);
   padding: 16px 40px;
@@ -5199,8 +5199,8 @@ hyphens: auto;
     width: 100%;
 }
 .side-space {
-    padding-right: 0px;
-    padding-left: 0px;
+     padding-right: 80px;
+    padding-left: 80px;
 }
 
 .side-space-for-footer .side-space-for-header {
@@ -5856,7 +5856,7 @@ margin-bottom: 40px;
 }
 
 .video-content-parent {
-     top: 350px;
+     top: 18%;
 }
 
 /*.video-section {*/
@@ -6314,7 +6314,7 @@ flex-wrap: nowrap;
 }
 
 .video-content-parent {
-        top: 347px;
+        top: 18%;
     }
     
   .navbar{

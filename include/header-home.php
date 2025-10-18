@@ -42,16 +42,16 @@ body {
     display:none;
 }
 
- .video-content-parent {
-    margin-left: 85px;
-      
-  }
+/*  .video-content-parent {
+  padding-left: 84px;
+  padding-right: 84px;
+  } */
 
 /* Show ONLY default logo on load (non-sticky) */
 #header:not(.sticky-active) .logo-default {
   display: block !important;
   height: 180px;
-  margin-left: 20px;
+ /*  margin-left: 20px; */
   margin-top: 10px;
 }
 
@@ -195,9 +195,8 @@ body {
   display: flex;
 }
 
-.content-parent{
-      margin-top: -246px;
-     
+ .content-parent{
+   padding-top: 9rem;
   }
   
   
@@ -229,7 +228,7 @@ body {
 @media (max-width: 1620px) {
 
     .video-content-parent{
-        margin-left: 15px;
+  /*  margin-left: 15px; */
     }
     
 }
@@ -238,7 +237,7 @@ body {
 @media (max-width: 1444px) {
 
     .video-content-parent{
-        margin-left: 42px;
+      /*  margin-left: 42px; */
     }
     
 }
@@ -260,7 +259,7 @@ body {
     height: 14px;
   }
   .video-content-parent {
-    margin-left: 39px;
+  /*    margin-left: 39px; */
       
   }
 }
@@ -286,11 +285,6 @@ body {
 
 /* Hide buttons below 763px */
 @media (max-width: 763px) {
-  #header .phone-chip,
-  #header #header-contact-us-btn,
-  #header #header-apply-now-btn {
-    display: none !important;
-  }
 
   #header #header-cta-right,
   #header .cta-wrap {
@@ -304,18 +298,18 @@ body {
       top: 5px;
     right: 11px;
   }
-  
+/*   
   
   .header-element-for-small-screen{
       display:block;
   }
   .header-element-hide-for-small-screen{
       display:none;
-  }
-  #header-cta-right{
+  } */
+/*   #header-cta-right{
       align-self: end;
       transform: translateY(10px);
-  }
+  } */
   .padding-buttom-for-small-screen{
       padding-bottom: 2px;
   }
@@ -327,6 +321,13 @@ body {
 }
 
 @media (max-width: 576px) {
+    
+      #header .phone-chip,
+  #header #header-contact-us-btn,
+  #header #header-apply-now-btn {
+    display: none !important;
+  }
+
     
     .mobile-contact{
         display:block!important;
@@ -356,10 +357,10 @@ body {
   }
 
   /* Adjust content positioning */
-  .content-parent {
+/*   .content-parent {
     margin-top: -246px;
     margin-left:-20px;
-  }
+  } */
 
   .slide-content {
     margin-left: -26px;
@@ -387,10 +388,10 @@ body {
 
   /* Optional: push text content down so logo doesn’t overlap */
   .video-content-parent {
-    z-index: 20;
-    position: relative;
+     display: none !important;
+/*     z-index: 20;
+    position: relative; */
   }
-  
   
   .header-element-for-small-screen{
       display:block;
@@ -400,7 +401,7 @@ body {
   }
   #header-cta-right{
       align-self: end;
-      transform: translateY(10px);
+      transform: translateY(8px);
   }
   .padding-buttom-for-small-screen{
       padding-bottom: 2px;
@@ -708,7 +709,7 @@ body {
 
           <!-- Humburger Button -->
           <button
-            class="btn btn-text ps-0 mobile-order-2"
+            class="btn btn-text ps-0 pe-0 mobile-order-2"
             data-bs-toggle="offcanvas"
             data-bs-target="#humburgmenu"
           >
@@ -742,8 +743,8 @@ body {
   
 
   <!-- Offcanvas Menu -->
-  <div class="offcanvas offcanvas-end" id="humburgmenu">
-    <div class="offcanvas-body">
+  <div class="offcanvas offcanvas-end" data-lenis-prevent id="humburgmenu">
+    <div class="offcanvas-body" >
       <div class="row">
         <!-- Left Side -->
         <div class="col-xl-3 col-lg-4 col-md-12 px-0 header-left-side">
@@ -808,7 +809,7 @@ body {
         <!-- Right Side -->
         <div class="col-xl-9 col-lg-8 col-md-12 px-0 pt-5 header-humburg-logo">
           <div class="humurg-cross">
-            <span class="btn-span-close">CLOSE</span>
+           <!-- <span class="btn-span-close">CLOSE</span>-->
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
           </div>
 
@@ -1528,14 +1529,14 @@ $(document).ready(function() {
     function adjustHeroForm() {
         var w = $(window).width();
         if (w >= 576 && w <= 800) {
-            $('.hero-form-section').css('transform', 'translateY(-540px)');
-            $('.hero-form-section').css('margin-left', '-66px');
+             /*  $('.hero-form-section').css('transform', 'translateY(-540px)'); */
+            /*  $('.hero-form-section').css('margin-left', '-66px'); */
         } 
         
          if (w >= 801 && w <= 1000) {
-            $('.hero-form-section').css('transform', 'translateY(-540px)');
+            /*  $('.hero-form-section').css('transform', 'translateY(-540px)'); */
             // $('.btn-white').hide();
-            $('.hero-form-section').css('margin-left', '-35px');
+             /*  $('.hero-form-section').css('margin-left', '-35px'); */
         } 
     }
     
@@ -1553,10 +1554,3 @@ $(document).ready(function() {
 
 
 </script>
-
-
-
-
-
-
-

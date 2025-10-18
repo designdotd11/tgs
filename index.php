@@ -51,18 +51,21 @@
 .video-description-show-hide-condition{ display:none; }
 .padding-for-normal-screen-new{ padding:80px 80px; }
 .swiperBtn-condition-for-screen{ display:none; }
+.video-big-screen-div{ height: 100vh; }
+
+@media (max-width:1250px){
+  .video-section .video-big-screen-div{ height: 685px; }
+}
 
 @media (max-width:988px){
   .swiperBtn-condition-for-screen{ display:block; }
-  
-
 }
 @media (max-width:768px){
   .video-section{ overflow:hidden; }
   .video-section .video-for-big-screen{ display:none; height:100%; width:100%; object-fit:cover; }
   .overlay_video::after{ background:rgba(0,0,0,.6); }
   .video-description-show-hide-condition{ display:block; }
-  .video-section .video-for-small-screen{ display:block; height:100%; width:100%; object-fit:cover; }
+  .video-section .video-for-small-screen{ display:block; height: 950px; width:100%; object-fit:cover; }
   .video-big-screen-div{ display:none; }
   .video-small-screen-div{ display:block; }
   .swiperBtn-condition-for-screen{ display:block; }
@@ -75,9 +78,9 @@
   .video-small-screen-div{ display:block; }
   .extra-padding-for-achivment-in-mobile{ padding-top:110px; }
   .swiperBtn-condition-for-screen{ display:block; }
-  .video-section{
+  /* .video-section{
       height:1000px!important;
-  }
+  } */
 }
 
 /* =========================
@@ -173,7 +176,7 @@
 
       .card-data {
         display: grid;
-        padding: 0 0 30px;
+        padding: 30px 0px;
         grid-gap: 20px;
         gap: 20px;
         position: relative;
@@ -352,7 +355,7 @@ ease-in-out;
           }
       }
       
-      @media (max-width: 763px) {
+      @media (max-width: 768px) {
           
           .card-data{
                   display: flex;
@@ -386,7 +389,7 @@ ease-in-out;
 ======================= */
 .hero-form-section {
     margin-top:10px;
-    width: 30vw;
+    width: 24vw;
     transform: translateY(-200px);
     font-size: 10px;
     /*margin-left:135px!important;*/
@@ -475,6 +478,13 @@ input#stdcode {
     margin-bottom: 34px;
 }
 
+.hero-form-section-sm {
+     font-size: 12px;
+    background-color: #424040ff;
+    color: white;
+    padding: 36px;
+     display:none;
+}
 
 /* ====================
     SPINNER REMOVAL
@@ -491,14 +501,14 @@ input#stdcode {
 /* ====================
     RESPONSIVE DESIGN
 ======================= */
-.adjustment-with-new-form {
+/* .adjustment-with-new-form {
     width: 67vw;
-}
+} */
 
 @media (max-width: 1620px) {
-    .hero-form-section {
+/*     .hero-form-section {
         margin-left: 110px;
-    }
+    } */
     
 .extra-style-for-bottom-contact-us-section-2nd-child-p-adjustment{
     margin-top: 30px;
@@ -510,14 +520,14 @@ input#stdcode {
 }
 
 @media (max-width: 1444px) {
-    .hero-form-section {
+  /*   .hero-form-section {
         margin-left: 30px;
         width: 34vw;
-    }
+    } */
 
-    .adjustment-with-new-form {
+/*     .adjustment-with-new-form {
         width: 57vw;
-    }
+    } */
     
 .extra-style-for-bottom-contact-us-section-2nd-child-img-adjustment img{
     margin-bottom: 0px;
@@ -527,19 +537,28 @@ input#stdcode {
 
 }
 
-
-
-@media (max-width: 763px) {
-    .adjustment-with-new-form {
-        width: auto;
+@media (max-width: 1024px) {
+    .hero-form-section {
+        width: 28vw;
     }
+}
 
+
+
+@media (max-width: 768px) {
+/*     .adjustment-with-new-form {
+        width: auto;
+    } */
     .video-content-parent {
         display: grid;
     }
 
+    .content-parent {
+        padding-top: 0;
+    }
+
     .hero-form-section {
-        width: 94%;
+        width: 100%;
         margin-left: 0;
     }
     
@@ -548,6 +567,10 @@ input#stdcode {
 @media (max-width: 576px) {
     .display-none-for-very-small-screen {
         display: none;
+    }
+   .video-section .video-for-small-screen{ height: 100% }
+    .hero-form-section-sm{
+        display: block;
     }
     
     .session_add{
@@ -564,7 +587,6 @@ input#stdcode {
     }
     .admission-form {
         width: 100% !important;
-        margin-left: -19px!important; 
     }
     
     .legacy-logo-padding-for-very-small-screen{
@@ -590,7 +612,7 @@ input#stdcode {
 ?>
 <div class="video-section position-relative overflow-hidden">
     <div class="overlay_video">
-        <div class="video-big-screen-div" style="height: 100svh;">
+        <div class="video-big-screen-div">
             <video autoplay muted loop playsinline class="img-fluid video-for-big-screen">
                 <source src="<?= base_url('assets/web')?>/videos/Good Shepherd's WT.mp4" type="video/mp4">
                 <source src="<?= base_url('assets/web')?>/videos/Good Shepherd's WT.webm" type="video/webm">
@@ -598,7 +620,7 @@ input#stdcode {
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="video-small-screen-div" style="height: 100svh;">
+        <div class="video-small-screen-div">
             <video autoplay muted loop playsinline class="img-fluid video-for-small-screen">
                 <source src="<?= base_url('assets/web')?>/videos/2795405-uhd_2160_3840_25fps (1).mp4" type="video/mp4">
                 <!--<source src="<?= base_url('assets/web')?>/videos/Good Shepherd's WT.webm" type="video/webm">-->
@@ -608,7 +630,7 @@ input#stdcode {
         </div>
     </div>
 
-    <div class="video-content-parent">
+    <div class="video-content-parent side-space">
         <div class="content-parent adjustment-with-new-form display-none-for-very-small-screen">
             <div class="slide-content">
                 <div class="logo-slider mb-3">
@@ -626,7 +648,7 @@ input#stdcode {
         <!--form -->
       
 
-       <div class="form width-right float-end p-0 hero-form-section" style="font-size: 12px; width: 320px;">
+       <div class="form width-right float-end hero-form-section" style="font-size: 12px;">
           <div>
             <h3 class="form-title text-end" style="font-size: 12px; margin-bottom: 5px;">
               ADMISSION ENQUIRY:
@@ -652,32 +674,32 @@ input#stdcode {
                     <input type="text" name="student_name" id="studentName" required
                       class="form-control border-0 rounded-0"
                       placeholder="Name Of the Student *"
-                      style="height: 26px; font-size: 12px; background-color:#009bbf; color:white;">
+                      style="height: 38px; font-size: 12px; background-color:#009bbf; color:white;">
                   </div>
             
                   <div class="col-12">
                     <input type="text" name="fathers_name" id="fatherName" required
                       class="form-control border-0 rounded-0"
                       placeholder="Father's Name *"
-                      style="height: 26px; font-size: 12px; background-color:#009bbf; color:white;">
+                      style="height: 38px; font-size: 12px; background-color:#009bbf; color:white;">
                   </div>
             
                   <div class="col-12 d-flex gap-1">
                     <input type="text" value="+91" readonly
                       class="form-control border-0 rounded-0 text-left"
-                      style="width:25%; height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                      style="width:25%; height:38px; font-size:12px; background-color:#009bbf; color:white;">
                     <input type="tel" id="phone2" name="phone" required
                       pattern="[0-9]{10}" maxlength="10"
                       oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);"
                       class="form-control border-0 rounded-0"
                       placeholder="Enter 10-digit Phone Number"
-                      style="flex:1; height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                      style="flex:1; height:38px; font-size:12px; background-color:#009bbf; color:white;">
 
                   </div>
             
                   <div class="col-12 mt-2">
                     <button type="button" id="sendOtpBtn" class="btn w-100 text-white"
-                      style="background:#5e1914; height:30px; font-size:12px; border-radius:100px;">
+                      style="background:#5e1914; height:38px; font-size:12px; border-radius:100px;">
                       Send OTP
                     </button>
                   </div>
@@ -1015,7 +1037,187 @@ input#stdcode {
  <!--    </div>-->
  <!--</section>-->
  
+<section>
+      <div class="form width-right float-end hero-form-section-sm" style="font-size: 12px;">
+          <div>
+            <h3 class="form-title text-end" style="font-size: 12px; margin-bottom: 5px;">
+              ADMISSION ENQUIRY:
+              <!--<span class="d-block d-lg-inline session_add">SESSION : 2025-26</span>-->
+            </h3>
+        
+            <div class="admission-form" style="border: 6px solid #009bbf; background: rgba(255,255,255,0.9); padding: 10px;">
+              <!-- STEP 1: BASIC FORM -->
+              <form id="enquiryForm" method="POST" action="<?= base_url('save_enquiry_ajax') ?>">
+                <div class="row" id="step1" style="gap:6px;">
+                  <div class="col-12">
+                    <select id="session" name="session" required
+                      class="form-select border-0 rounded-0"
+                      style="height:38px; font-size:14px; background-color:#009bbf; color:white; border:1px solid #ccc; border-radius:5px; padding:6px 10px;"
+                      onchange="this.style.backgroundColor = this.value ? '#fff' : '#009bbf'; this.style.color = this.value ? '#000' : '#fff';">
+                      <option value="">Select Session</option>
+                      <option value="2025-26">2025-26</option>
+                      <option value="2026-27">2026-27</option>
+                    </select>
+                  </div>
+            
+                  <div class="col-12">
+                    <input type="text" name="student_name" id="studentName" required
+                      class="form-control border-0 rounded-0"
+                      placeholder="Name Of the Student *"
+                      style="height: 26px; font-size: 12px; background-color:#009bbf; color:white;">
+                  </div>
+            
+                  <div class="col-12">
+                    <input type="text" name="fathers_name" id="fatherName" required
+                      class="form-control border-0 rounded-0"
+                      placeholder="Father's Name *"
+                      style="height: 26px; font-size: 12px; background-color:#009bbf; color:white;">
+                  </div>
+            
+                  <div class="col-12 d-flex gap-1">
+                    <input type="text" value="+91" readonly
+                      class="form-control border-0 rounded-0 text-left"
+                      style="width:25%; height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                    <input type="tel" id="phone2" name="phone" required
+                      pattern="[0-9]{10}" maxlength="10"
+                      oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);"
+                      class="form-control border-0 rounded-0"
+                      placeholder="Enter 10-digit Phone Number"
+                      style="flex:1; height:26px; font-size:12px; background-color:#009bbf; color:white;">
 
+                  </div>
+            
+                  <div class="col-12 mt-2">
+                    <button type="button" id="sendOtpBtn" class="btn w-100 text-white"
+                      style="background:#5e1914; height:30px; font-size:12px; border-radius:100px;">
+                      Send OTP
+                    </button>
+                  </div>
+                </div>
+            
+                <!-- STEP 2: OTP -->
+                <div class="row" id="step2" style="display:none; text-align:center; gap:6px;">
+                  <!--<div class="col-12 mb-2">-->
+                  <!--  <label style="font-size:12px; color:#000;">Enter 4-Digit OTP</label>-->
+                  <!--</div>-->
+                  <div class="col-12 d-flex justify-content-center gap-2">
+                    <input type="text" class="form-control otp-box" maxlength="1" style="width:40px; text-align:center;color:black;">
+                    <input type="text" class="form-control otp-box" maxlength="1" style="width:40px; text-align:center;color:black;">
+                    <input type="text" class="form-control otp-box" maxlength="1" style="width:40px; text-align:center;color:black;">
+                    <input type="text" class="form-control otp-box" maxlength="1" style="width:40px; text-align:center;color:black;">
+                  </div>
+                  <div class="col-12 mt-2">
+                    <button type="button" id="verifyOtpBtn" class="btn w-100 text-white"
+                      style="background:#5e1914; height:30px; font-size:12px; border-radius:100px;">
+                      Verify OTP
+                    </button>
+                  </div>
+                </div>
+            
+                <!-- STEP 3: FULL FORM (with CAPTCHA) -->
+                <div class="row" id="step3" style="display:none; gap:6px; margin-top:5px;">
+                  <div class="col-12">
+                    <input type="email" name="email" required
+                      class="form-control border-0 rounded-0"
+                      placeholder="Email"
+                      style="height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                  </div>
+                
+                  <div class="d-flex gap-1" style="margin-top:6px;">
+                    <select name="location" required class="form-select border-0 rounded-0"
+                      style="height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                      <option value="">Select Location</option>
+                      <option value="Bengaluru">Bengaluru</option>
+                      <option value="Delhi NCR">Delhi NCR</option>
+                    </select>
+                
+                    <select name="school" required class="form-select border-0 rounded-0"
+                      style="height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                      <option value="">Select School</option>
+                      <option value="St. Thomas School">St. Thomas School</option>
+                      <option value="The Trinity School">The Trinity School</option>
+                      <option value="The Good Shepherd’s School">The Good Shepherd’s School</option>
+                    </select>
+                  </div>
+                
+                  <div class="col-12" style="margin-top:5px;">
+                    <select name="student_class" required class="form-select border-0 rounded-0"
+                      style="height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                      <option value="">Select Class *</option>
+                      <option value="M1 (Pre-Nursery)">M1 (Pre-Nursery)</option>
+                      <option value="M2 (LKG)">M2 (LKG)</option>
+                      <option value="M3 (UKG)">M3 (UKG)</option>
+                      <option value="Grade I">Grade I</option>
+                      <option value="Grade II">Grade II</option>
+                      <option value="Grade III">Grade III</option>
+                      <option value="Grade IV">Grade IV</option>
+                      <option value="Grade V">Grade V</option>
+                      <option value="Grade VI">Grade VI</option>
+                      <option value="Grade VII">Grade VII</option>
+                      <option value="Grade VIII">Grade VIII</option>
+                    </select>
+                  </div>
+                
+                  <div class="col-12" style="margin-top:5px;">
+                    <select name="referal" required class="form-select border-0 rounded-0"
+                      style="height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                      <option value="">How Did You Hear About Us? *</option>
+                      <!-- options omitted for brevity -->
+                            <option value="">Select..</option>
+                             <option value="Website">Website</option>
+                            <option value="Group Website">Group Website</option>
+                            <option value="School Website">School Website</option>
+                            <option value="Google">Google</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Chat Bot">Chat Bot</option>
+                            <option value="YouTube">YouTube</option>
+                            <option value="Email">Email</option>
+                            <option value="Hoarding / Pole Board / Direction Boards">Hoarding / Pole Board / Direction Boards</option>
+                            <option value="Blog / Forums">Blog / Forums</option>
+                            <option value="TV / Radio">TV / Radio</option>
+                            <option value="Corporate Referrals">Corporate Referrals</option>
+                            <option value="School / Bus Branding">School / Bus Branding</option>
+                            <option value="Other Digital Media">Other Digital Media</option>
+                            <option value="Friends / Relatives">Friends / Relatives</option>
+                            <option value="Newspaper Ad / Leaflet">Newspaper Ad / Leaflet</option>
+                            <option value="Partner Play School">Partner Play School</option>
+                            <option value="Previous School">Previous School</option>
+                            <option value="C2C">C2C</option>
+                      <!-- ... -->
+                    </select>
+                  </div>
+                
+                  <!-- ======= CAPTCHA ======= -->
+                  <div class="col-12" style="margin-top:6px;">
+                    <div class="d-flex align-items-center gap-2">
+                      <!-- input must keep name="captcha" and id="captcha-input" -->
+                      <input type="text" name="captcha" id="captcha-input-1" class="form-control rounded-0 captcha-input"
+                             placeholder="Security" required
+                             style="height:26px; font-size:12px; background-color:#009bbf; color:white; flex:1; padding:6px 8px;">
+                      <!-- captcha code display (keep id="captcha-code") -->
+                      <span id="captcha-code-1" style="padding:6px 10px; background:#f0f0f0; color:#000; border:1px solid #ccc; border-radius:4px; font-weight:bold; display:flex; align-items:center; height:26px;">
+                        <?= $captchacode ?>
+                      </span>
+                    </div>
+                    <div id="captcha-error-1" style="color:red; font-size:12px; margin-top:4px;"></div>
+                  </div>
+                  <!-- ====== end CAPTCHA ====== -->
+                
+                  <div class="col-12 mt-2">
+                    <button type="submit" class="btn w-100 text-white"
+                      style="background:#5e1914; height:30px; font-size:12px; border-radius:100px;">
+                      Submit Enquiry
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+    </div>
+</section>
 
 <section>
       <div
@@ -1943,12 +2145,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const cta_wrap_for_humbarger_menue = document.getElementById('header-cta-right');
   
 
-  const hideThreshold = 10;
+  const hideThreshold = 20;
 
   // Function to check if the screen width is 576px or less
   function isSmallScreen() {
-    // return window.innerWidth <= 576;
-    return window.innerWidth <= 800;
+     return window.innerWidth <= 576;
+   // return window.innerWidth <= 800;
   }
 
   // Event listener for scroll
@@ -1992,7 +2194,7 @@ $(document).ready(function () {
 
         if (width >= 1001) {
             // Apply margin-left only for large screens
-            $(".hero-form-section").css("margin-left", "135px");
+            // $(".hero-form-section").css("margin-left", "135px");
         }
     }
 
