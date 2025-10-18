@@ -12,6 +12,19 @@
       padding-right: 0px;
     }
 }
+
+@media (max-width: 576px) {
+    
+    .padding-for-mobile-screen{
+        padding-right: 22px !important;
+        padding-left: 22px !important;
+    }
+    
+    .padding-zero-for-very-small-screen{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
  </style>
  
      
@@ -21,7 +34,7 @@
     <span class="ps-2">How may I help you?</span>
 </a>
 <section>
-    <footer class="footer footer-about padding-for-footer-in-small-screen">
+    <footer class="footer footer-about padding-for-footer-in-small-screen padding-for-mobile-screen">
         <div class="footer-overlay"></div>
         <div class="container-fluid side-space position-relative side-space-for-footer padding-zero-for-very-small-screen">
             <div class="row pt-5 pb-3">

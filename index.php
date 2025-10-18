@@ -53,8 +53,8 @@
 .swiperBtn-condition-for-screen{ display:none; }
 .video-big-screen-div{ height: 100vh; }
 
-@media (max-width:1250px){
-  .video-section .video-big-screen-div{ height: 685px; }
+@media (max-width:1440px){
+  .video-section .video-big-screen-div{ height: 750px; }
 }
 
 @media (max-width:988px){
@@ -78,7 +78,7 @@
   .video-small-screen-div{ display:block; }
   .extra-padding-for-achivment-in-mobile{ padding-top:110px; }
   .swiperBtn-condition-for-screen{ display:block; }
-  /* .video-section{
+   /* .video-section{
       height:1000px!important;
   } */
 }
@@ -483,9 +483,13 @@ input#stdcode {
     background-color: #424040ff;
     color: white;
     padding: 36px;
-     display:none;
+    display:none;
 }
 
+
+.padding-for-Toil-Perseverance{
+     padding: 70px 36px;
+}
 /* ====================
     SPINNER REMOVAL
 ======================= */
@@ -520,7 +524,7 @@ input#stdcode {
 }
 
 @media (max-width: 1444px) {
-  /*   .hero-form-section {
+    /*   .hero-form-section {
         margin-left: 30px;
         width: 34vw;
     } */
@@ -539,20 +543,20 @@ input#stdcode {
 
 @media (max-width: 1024px) {
     .hero-form-section {
-        width: 28vw;
+        width: 29vw;
     }
 }
 
 
-
 @media (max-width: 768px) {
-/*     .adjustment-with-new-form {
+  /*     .adjustment-with-new-form {
         width: auto;
     } */
+    
     .video-content-parent {
         display: grid;
     }
-
+    
     .content-parent {
         padding-top: 0;
     }
@@ -568,7 +572,7 @@ input#stdcode {
     .display-none-for-very-small-screen {
         display: none;
     }
-   .video-section .video-for-small-screen{ height: 100% }
+    .video-section .video-for-small-screen{ height: 100% }
     .hero-form-section-sm{
         display: block;
     }
@@ -591,6 +595,16 @@ input#stdcode {
     
     .legacy-logo-padding-for-very-small-screen{
         padding: 0 36px !important;
+    }
+    
+    .padding-for-mobile-screen{
+        padding-right: 22px !important;
+        padding-left: 22px !important;
+    }
+    
+    .padding-zero-for-very-small-screen{
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -1040,7 +1054,7 @@ input#stdcode {
 <section>
       <div class="form width-right float-end hero-form-section-sm" style="font-size: 12px;">
           <div>
-            <h3 class="form-title text-end" style="font-size: 12px; margin-bottom: 5px;">
+           <h3 class="form-title text-end" style="font-size: 12px; margin-bottom: 5px;">
               ADMISSION ENQUIRY:
               <!--<span class="d-block d-lg-inline session_add">SESSION : 2025-26</span>-->
             </h3>
@@ -1064,32 +1078,32 @@ input#stdcode {
                     <input type="text" name="student_name" id="studentName" required
                       class="form-control border-0 rounded-0"
                       placeholder="Name Of the Student *"
-                      style="height: 26px; font-size: 12px; background-color:#009bbf; color:white;">
+                      style="height: 38px; font-size: 12px; background-color:#009bbf; color:white;">
                   </div>
             
                   <div class="col-12">
                     <input type="text" name="fathers_name" id="fatherName" required
                       class="form-control border-0 rounded-0"
                       placeholder="Father's Name *"
-                      style="height: 26px; font-size: 12px; background-color:#009bbf; color:white;">
+                      style="height: 38px; font-size: 12px; background-color:#009bbf; color:white;">
                   </div>
             
                   <div class="col-12 d-flex gap-1">
                     <input type="text" value="+91" readonly
                       class="form-control border-0 rounded-0 text-left"
-                      style="width:25%; height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                      style="width:25%; height:38px; font-size:12px; background-color:#009bbf; color:white;">
                     <input type="tel" id="phone2" name="phone" required
                       pattern="[0-9]{10}" maxlength="10"
                       oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);"
                       class="form-control border-0 rounded-0"
                       placeholder="Enter 10-digit Phone Number"
-                      style="flex:1; height:26px; font-size:12px; background-color:#009bbf; color:white;">
+                      style="flex:1; height:38px; font-size:12px; background-color:#009bbf; color:white;">
 
                   </div>
             
                   <div class="col-12 mt-2">
                     <button type="button" id="sendOtpBtn" class="btn w-100 text-white"
-                      style="background:#5e1914; height:30px; font-size:12px; border-radius:100px;">
+                      style="background:#5e1914; height:38px; font-size:12px; border-radius:100px;">
                       Send OTP
                     </button>
                   </div>
@@ -1221,7 +1235,7 @@ input#stdcode {
 
 <section>
       <div
-        class="side-padding bg-sky-blue top-border-blue pt-6 pb-6 py-small-3 both-padding-for-small-screen side-space"
+        class="side-padding bg-sky-blue top-border-blue pt-6 pb-6 both-padding-for-small-screen side-space padding-for-mobile-screen"
       >
         <div class="card-data">
           <div class="banner-card" style="opacity: 1; transform: none">
@@ -1326,7 +1340,7 @@ input#stdcode {
 </div>
 
  <!-- about us -->
- <section class="pb-80 " id="about-us" style="padding: 70px 36px;">
+ <section class="pb-80 padding-for-Toil-Perseverance padding-for-mobile-screen" id="about-us">
      <h3 class="legacy-title text-center text-dark">Toil &amp; Perseverance - <span class="text-blue">Since 1995</span></h3>
      <div class="about-us side-space padding-zero-for-small-screen">
          <div class="about-content">
@@ -1349,7 +1363,7 @@ input#stdcode {
          <div class="legacy-logo-container position-relative">
              <div class="our-legacy" style="background-image: url('<?= base_url('uploads/school/').$institutions->school_1_logo?>'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 947px; width: 100%;">
                  <div class="overlay-legacy"></div>
-                 <div class="legacy-logo legacy-logo-padding-for-very-small-screen">
+                 <div class="legacy-logo legacy-logo-padding-for-very-small-screen padding-for-mobile-screen">
                      <div class="legacy-item">
                          <img src="<?= base_url('assets/web')?>/images/St Thomas School LogoAsset.png" alt="<?= $institutions->school_1_name?>" loading="lazy" width="350" height="0" decoding="async" data-nimg="1" class="img-fluid" style="color: transparent;width:600px;" />
                          <div class="mt-2">
@@ -1365,7 +1379,7 @@ input#stdcode {
              </div>
              <div class="our-legacy" style="background-image: url('<?= base_url('uploads/school/').$institutions->school_2_logo?>'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 947px; width: 100%;">
                  <div class="overlay-legacy-right"></div>
-                 <div class="legacy-logo legacy-logo-padding-for-very-small-screen">
+                 <div class="legacy-logo legacy-logo-padding-for-very-small-screen padding-for-mobile-screen">
                      <div class="legacy-item">
                          <img src="<?= base_url('assets/web')?>/images/Trinity School LogoAsset.png" alt="<?= $institutions->school_2_name?>" loading="lazy" width="350" height="0" decoding="async" data-nimg="1" class="img-fluid" style="color: transparent;width:600px;" />
                          <div class="mt-2">
@@ -1424,7 +1438,7 @@ input#stdcode {
 
  <!-- achievement -->
 
- <section class="pb-80 padding-for-small-screen padding-for-normal-screen-new extra-padding-for-achivment-in-mobile">
+ <section class="pb-80 padding-for-small-screen padding-for-normal-screen-new extra-padding-for-achivment-in-mobile padding-for-mobile-screen">
     <div class="side-space padding-zero-for-small-screen">
         <div class="swiper achievement-swiper achievement-section">
             <div class="swiper-wrapper" style="height: auto;">
@@ -1531,7 +1545,7 @@ input#stdcode {
 
  <!-- school -->
 
- <section class="pb-80 pt-80 padding-for-small-screen padding-for-normal-screen-new" style="background: #4e6626;">
+ <section class="pb-80 pt-80 padding-for-small-screen padding-for-normal-screen-new padding-for-mobile-screen" style="background: #4e6626;">
      <h3 class="legacy-title text-center text-white">Scholastic Programme</h3>
      <div class="school">
          <div class="school-content padding-zero-for-small-screen">
@@ -1583,7 +1597,7 @@ input#stdcode {
 
  <!-- facilites -->
 
- <section class="pb-80 pt-80 side-space padding-for-small-screen-for-facilites padding-for-normal-screen-new" style="background:#36454F;">
+ <section class="pb-80 pt-80 side-space padding-for-small-screen-for-facilites padding-for-normal-screen-new padding-for-mobile-screen" style="background:#36454F;">
      <div class="row">
          <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 ">
              <div class="facilities-content">
@@ -1613,7 +1627,7 @@ input#stdcode {
 
  <!-- news and event  -->
 
- <section class="pb-80 pt-80 side-space padding-for-small-screen-for-facilites padding-for-normal-screen-new">
+ <section class="pb-80 pt-80 side-space padding-for-small-screen-for-facilites padding-for-normal-screen-new padding-for-mobile-screen">
      <div class="row">
          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 ">
              <div class="news-event-box">
@@ -1695,12 +1709,12 @@ input#stdcode {
  </section>
 
 
- <section class="bg-sky-blue pt-80 pb-80" style="padding-right: 20px;padding-left: 20px;">
+ <section class="bg-sky-blue pt-80 pb-80 padding-for-mobile-screen">
      <div class="about-us side-space padding-zero-for-small-screen">
          <div class="text-center pb-4">
              <img src="<?= base_url('assets/web')?>/images/education-bag-learning.svg" class="img-fluid" style="width:135px;" />
          </div>
-         <div class="schedul-content">
+         <div class="schedul-content padding-zero-for-very-small-screen">
              <p class="mb-0">
                  In developing leaders for tomorrow, TGSS is mindful of the fact that it exists because of the generosity of its founders and seeks to build upon that same spirit of philanthropy today. From current students, to faculty and
                  staff, to parents and alumni, the TGSS community instills the importance of giving back.
@@ -2145,37 +2159,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const cta_wrap_for_humbarger_menue = document.getElementById('header-cta-right');
   
 
-  const hideThreshold = 20;
+  const hideThreshold = 10;
 
   // Function to check if the screen width is 576px or less
   function isSmallScreen() {
      return window.innerWidth <= 576;
-   // return window.innerWidth <= 800;
+    // return window.innerWidth <= 800;
   }
 
   // Event listener for scroll
-  window.addEventListener('scroll', function() {
-    if (isSmallScreen()) {
-      let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-      if (scrollPosition > hideThreshold) {
-        // Hide and show elements based on scroll position
-        header_below_contact_section.style.display = "none"; 
-        header_above_contact_section.style.display = "block"; 
-        logo_section_for_small_screen.style.display = "block"; 
-        cta_wrap_for_humbarger_menue.style.alignSelf = "auto";
-        cta_wrap_for_humbarger_menue.style.transform = 'translateY(0px)';
-        logo.style.display = "none"; 
-      } else {
-        header_below_contact_section.style.display = "block"; 
-        header_above_contact_section.style.display = "none"; 
-        logo_section_for_small_screen.style.display = "none"; 
-        cta_wrap_for_humbarger_menue.style.alignSelf = "end";
-        cta_wrap_for_humbarger_menue.style.transform = 'translateY(10px)';
-        logo.style.display = "block"; 
-      }
-    }
-  });
 
 
   window.addEventListener('resize', function() {
@@ -2194,7 +2186,7 @@ $(document).ready(function () {
 
         if (width >= 1001) {
             // Apply margin-left only for large screens
-            // $(".hero-form-section").css("margin-left", "135px");
+            //$(".hero-form-section").css("margin-left", "135px");
         }
     }
 
